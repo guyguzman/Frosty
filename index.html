@@ -49,6 +49,11 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        
+        text {
+            dominant-baseline: hanging;
+            font: 180px Roboto, Helvetica, Arial, sans-serif;
+        }
     </style>
 </head>
 
@@ -57,26 +62,58 @@
     <div class="container">
 
         <div>
-            <div class="hello">HELLO</div>
-            <svg width="200" height="200" viewBox="0 0 200 200" style="backdrop-filter:blur(10px)" clip-path="url(#clippath)">
+            <!-- <div>
+                <svg width="800" height="200" viewBox="0 0 800 200" style="backdrop-filter:blur(180px) " clip-path="url(#cliptext) ">
+                    <def>
+                        <clipPath id="cliptext ">
+                            <text x="10 " y="10 ">GUY!</text>
+                        </clipPath>
+                    </def>
+                    <text x="10 " y="10 " fill="#ff0000 ">GUY!</text>
+                </svg>
+            </div> -->
+
+            <svg width="200 " height="200 " viewBox="0 0 200 200 " style="backdrop-filter:blur(10px) " clip-path="url(#clippath) ">
                 <defs>
-                    <filter id="gaussian">
-                        <feGaussianBlur stdDeviation="18" in="SourceGraphic" result="BLUR"></feGaussianBlur>
+                    <filter id="gaussian ">
+                        <feGaussianBlur stdDeviation="18 " in="SourceGraphic " result="BLUR "></feGaussianBlur>
                     </filter>
-                    <clipPath id="clippath">
-                        <ellipse cx="100" cy="100" rx="100" ry="100"></ellipse>
+                    <clipPath id="clippath ">
+                        <ellipse cx="100 " cy="100 " rx="100 " ry="100 "></ellipse>
                     </clipPath>
                 </defs>
-                <!-- <ellipse clip-path="url(#clippath)" cx="100" cy="100" rx="50" ry="50" fill="#ffffff" fill-opacity=".6"></ellipse> -->
-                <rect clip-path="url(#clippath)" width="200" height="200" fill="#ffffff" opacity=".5"></rect>
+                <!-- <ellipse clip-path="url(#clippath) " cx="100 " cy="100 " rx="50 " ry="50 " fill="#ffffff " fill-opacity=".6 "></ellipse> -->
+                <rect clip-path="url(#clippath) " width="200 " height="200 " fill="#ffffff " opacity=".5 "></rect>
             </svg>
 
-            <div class="frostytext">Hello</div>
-            <div style="width:100px;height:100px;background-color:#ff5252;clip-path: circle(50px at center)">
+            <!-- <svg width="200 " height="200 " viewBox="0 0 200 200 " style="backdrop-filter:blur(10px) " clip-path="url(#clippath ">
+                <defs>
+                    <filter id="gaussian ">
+                        <feGaussianBlur stdDeviation="18 " in="SourceGraphic " result="BLUR "></feGaussianBlur>
+                    </filter>
+                    <clipPath id="clippath ">
+                        <ellipse cx="100 " cy="100 " rx="100 " ry="100 "></ellipse>
+                    </clipPath>
+                </defs>
+                 <rect width="200 " height="200 " fill="#ffffff " opacity=".5 "></rect>
+            </svg>
+
+            <div class="frostytext ">Hello</div>
+
+            <div style="height:100px;height:100px;background-color:hsl(211, 100%, 66%);opacity:.5;clip-path:circle(50px at center) ">
             </div>
-            <div style="width:100px;height:100px;background-color:#ff5252;clip-path: polygon(0% 0%, 100% 0%, 50% 100%)">
+
+            <div style="height:100px;height:100px;background-color:hsl(211, 100%, 66%);clip-path:circle(50px at right) ">
             </div>
+
+            <div style="width:100px;height:100px;background-color:#ff5252;clip-path:polygon(0% 0%, 100% 0%, 50% 100%) ">
+            </div> -->
+
         </div>
+
+
+
+    </div>
 
 </body>
 
