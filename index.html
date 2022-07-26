@@ -58,12 +58,18 @@
 
         <div>
             <div class="hello">HELLO</div>
-            <svg width="200" height="200" style="backdrop-filter:blur(10px)">
-            <filter id="gaussian">
-              <feGaussianBlur stdDeviation="18" in="SourceGraphic" result="BLUR"></feGaussianBlur>
-            </filter>
-            <ellipse cx="100" cy="100" rx="100" ry="100" fill="#d0d0d0" fill-opacity=".6" ></ellipse>
-          </svg>
+            <svg width="200" height="200" viewBox="0 0 200 200" style="backdrop-filter:blur(10px)">
+                <defs>
+                    <filter id="gaussian">
+                        <feGaussianBlur stdDeviation="18" in="SourceGraphic" result="BLUR"></feGaussianBlur>
+                    </filter>
+                    <clipPath id="clippath">
+                        <!-- <rect width="200" height="200" /> -->
+                        <circle cx="100" cy="100"></circle>
+                      </clipPath>
+                </defs>
+                <ellipse clip-path="url(#clippath)" cx="100" cy="100" rx="100" ry="100" fill="#d0d0d0" fill-opacity=".6"></ellipse>
+            </svg>
 
             <div class="frostytext">Hello</div>
             <div style="width:100px;height:100px;background-color:#ff5252;clip-path: circle(50px at center)">
