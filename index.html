@@ -52,7 +52,8 @@
         
         text {
             dominant-baseline: hanging;
-            font: 180px Roboto, Helvetica, Arial, sans-serif;
+            font: 240px Roboto, Helvetica, Arial, sans-serif;
+            color: white;
         }
     </style>
 </head>
@@ -61,16 +62,27 @@
 
     <div class="container">
         <div>
+
+
+            <svg width="1000" height="200" viewBox="0 0 1000 200" style="backdrop-filter:blur(5px)" clip-path="url(#cliptext)">
+                <defs>
+                    <clipPath id="cliptext">
+                        <text>DAKOTA</text>
+                    </clipPath>
+                </defs>
+                <text fill="white" fill-opacity=".5" style="backdrop-filter:blur(5px)">DAKOTA</text>
+            </svg>
+
+
             <svg width="200" height="200" viewBox="0 0 200 200" style="backdrop-filter:blur(5px)" clip-path="url(#clippath)">
                 <defs>
                     <clipPath id="clippath">
                         <ellipse cx="100" cy="100" rx="100" ry="100"></ellipse>
                     </clipPath>
                 </defs>
-                <ellipse cx="100" cy="100" rx="100" ry="100" fill="#ffffff"
-                    fill-opacity=".5"></ellipse>
-                <!-- <rect width="200" height="200" fill="#ffffff" opacity=".5"></rect>
-            </svg> -->
+                <ellipse cx="100" cy="100" rx="100" ry="100" fill="#ffffff" fill-opacity=".5"></ellipse>
+            </svg>
+
         </div>
     </div>
 
