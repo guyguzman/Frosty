@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Roboto;
+        }
+        
+        .hello {
+            font-size: 120px;
+            color: rgba(255, 255, 255, .5);
+        }
+        
+        #circle {
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
+            color: rgba(255, 255, 255, 0.25);
+            text-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8px);
+        }
+        
+        .frostytext {
+            color: rgba(255, 255, 255, 0.25);
+            text-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(40px);
+            font-size: 200px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100vh;
+            background-color: #ff5252;
+            align-items: center;
+            justify-items: center;
+            background-image: url("https://ccartuse.sirv.com/Dakota/image51.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div>
+            <div class="hello">HELLO</div>
+            <svg width="200" height="200" style="backdrop-filter:blur(10px)">
+            <filter id="gaussian">
+              <feGaussianBlur stdDeviation="18" in="SourceGraphic" result="BLUR"></feGaussianBlur>
+            </filter>
+            <ellipse cx="100" cy="100" rx="100" ry="100" fill="#d0d0d0" fill-opacity=".6" ></ellipse>
+          </svg>
+
+            <div class="frostytext">Hello</div>
+            <div style="width:100px;height:100px;background-color:#ff5252;clip-path: circle(50px at center)">
+            </div>
+            <div style="width:100px;height:100px;background-color:#ff5252;clip-path: polygon(0% 0%, 100% 0%, 50% 100%)">
+            </div>
+        </div>
+
+</body>
+
+<script>
+    $(document).ready(function() {
+        console.log(this);
+        $.getJSON("https://ipinfo.io?token=dd17c16d21d2c4 ", function(response) {
+            console.log(response);
+        });
+    });
+</script>
+
+</html>
