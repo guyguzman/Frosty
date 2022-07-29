@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 13.28987"
-    clip-path="#helloguy" fill="#ffffff" opacity=".1" style="backdrop-filter:blur(50px)">
+    clip-path="url(#helloguy)" fill="#ffffff" opacity=".1" style="backdrop-filter:blur(50px)">
     <defs>
         <clipPath id="helloguy">
             <g>
